@@ -1,5 +1,5 @@
 import styles from "./styles/Features.module.css";
-// import intuitiveDashboard from '../../public/media/intuitive-dashboard.svg'
+
 export interface IFeaturesProps {
   className?: string;
 }
@@ -32,45 +32,41 @@ const Features = ({
             <div className={styles.frame4}>
               <img
                 className={styles.lucideLayoutDashboard}
-                // src={intuitiveDashboard}
-                src="../../public/media/intuitive-dashboard.svg"
+                src="../../public/media/experience-efficiency.svg"
               />
               <div className={styles.intuitiveDashboard}>
-                Intuitive Dashboard{" "}
+                Experience efficiency{" "}
               </div>
               <div className={styles.textFeature1}>
-                Gain clear, real-time insights into your income with an
-                intuitive dashboard.{" "}
+                Let FoxTRK AI co-work with you to streamline your decision-making.{" "}
               </div>
             </div>
             <div className={styles.frame5}>
-              <img className={styles.lucideSplit} src="../../public/media/data-driven-decisions.svg" />
+              <img className={styles.lucideSplit} src="../../public/media/optimize-your-area.svg" />
               <div className={styles.dataDrivenDecisions}>
-                Data-driven decisions{" "}
+                Optimize your area{" "}
               </div>
               <div className={styles.textFeature1}>
-                Make informed decisions about your work.{" "}
+                Plan your routes based on forecasts and calculations to avoid delays and improve efficiency.{" "}
               </div>
             </div>
           </div>
           <div className={styles.frame42}>
             <div className={styles.frame4}>
-              <img className={styles.lucideGoal} src="../../public/media/set-goals.svg" />
-              <div className={styles.setGoals}>Set goals </div>
+              <img className={styles.lucideGoal} src="../../public/media/stay-prepared.svg" />
+              <div className={styles.setGoals}>Stay prepared </div>
               <div className={styles.textFeature1}>
-                Set goals to achieve milestones and improve your work-life
-                balance and financial health.{" "}
+                Get real-time updates about what’s happen around you or your run area to ensure a seamless and efficient experience.{" "}
               </div>
             </div>
             <div className={styles.frame5}>
               <img
                 className={styles.lucideRectangleEllipsis}
-                src="../../public/media/track-progress.svg"
+                src="../../public/media/improve-performance.svg"
               />
-              <div className={styles.trackProgress}>Track progress </div>
+              <div className={styles.trackProgress}>Improve performance</div>
               <div className={styles.textFeature1}>
-                Track your progress and stay motivated by monitoring your
-                earnings and work performance.{" "}
+                Maximize efficiency and profitability with our AI-powered co-working feature.{" "}
               </div>
             </div>
           </div>
