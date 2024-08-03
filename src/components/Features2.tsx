@@ -32,7 +32,7 @@ const Features = ({
             <div className={styles.frame4}>
               <img
                 className={styles.lucideLayoutDashboard}
-                src="../../public/media/experience-efficiency.svg"
+                src="/media/experience-efficiency.svg"
               />
               <div className={styles.intuitiveDashboard}>
                 Experience efficiency{" "}
@@ -42,7 +42,7 @@ const Features = ({
               </div>
             </div>
             <div className={styles.frame5}>
-              <img className={styles.lucideSplit} src="../../public/media/optimize-your-area.svg" />
+              <img className={styles.lucideSplit} src="/media/optimize-your-area.svg" />
               <div className={styles.dataDrivenDecisions}>
                 Optimize your area{" "}
               </div>
@@ -53,7 +53,7 @@ const Features = ({
           </div>
           <div className={styles.frame42}>
             <div className={styles.frame4}>
-              <img className={styles.lucideGoal} src="../../public/media/stay-prepared.svg" />
+              <img className={styles.lucideGoal} src="/media/stay-prepared.svg" />
               <div className={styles.setGoals}>Stay prepared </div>
               <div className={styles.textFeature1}>
                 Get real-time updates about what’s happen around you or your run area to ensure a seamless and efficient experience.{" "}
@@ -62,7 +62,7 @@ const Features = ({
             <div className={styles.frame5}>
               <img
                 className={styles.lucideRectangleEllipsis}
-                src="../../public/media/improve-performance.svg"
+                src="/media/improve-performance.svg"
               />
               <div className={styles.trackProgress}>Improve performance</div>
               <div className={styles.textFeature1}>

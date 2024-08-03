@@ -1,5 +1,5 @@
 import styles from "./styles/Features.module.css";
-// import intuitiveDashboard from '../../public/media/intuitive-dashboard.svg'
+// import intuitiveDashboard from '/media/intuitive-dashboard.svg'
 export interface IFeaturesProps {
   className?: string;
 }
@@ -33,7 +33,7 @@ const Features = ({
               <img
                 className={styles.lucideLayoutDashboard}
                 // src={intuitiveDashboard}
-                src="../../public/media/intuitive-dashboard.svg"
+                src="/media/intuitive-dashboard.svg"
               />
               <div className={styles.intuitiveDashboard}>
                 Intuitive Dashboard{" "}
@@ -44,7 +44,7 @@ const Features = ({
               </div>
             </div>
             <div className={styles.frame5}>
-              <img className={styles.lucideSplit} src="../../public/media/data-driven-decisions.svg" />
+              <img className={styles.lucideSplit} src="/media/data-driven-decisions.svg" />
               <div className={styles.dataDrivenDecisions}>
                 Data-driven decisions{" "}
               </div>
@@ -55,7 +55,7 @@ const Features = ({
           </div>
           <div className={styles.frame42}>
             <div className={styles.frame4}>
-              <img className={styles.lucideGoal} src="../../public/media/set-goals.svg" />
+              <img className={styles.lucideGoal} src="/media/set-goals.svg" />
               <div className={styles.setGoals}>Set goals </div>
               <div className={styles.textFeature1}>
                 Set goals to achieve milestones and improve your work-life
@@ -65,7 +65,7 @@ const Features = ({
             <div className={styles.frame5}>
               <img
                 className={styles.lucideRectangleEllipsis}
-                src="../../public/media/track-progress.svg"
+                src="/media/track-progress.svg"
               />
               <div className={styles.trackProgress}>Track progress </div>
               <div className={styles.textFeature1}>
