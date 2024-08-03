@@ -1,16 +1,25 @@
 ---
-
+import HeaderNav from '../components/HeaderNav';
+import HeroComponent from '../components/HeroComponent';
+import Features from '../components/Features';
+import Essentials from '../components/Essentials';
+import Contact from '../components/Contact';
 ---
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Your delivery co-worker</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<HeaderNav />
+		<HeroComponent />
+		<Features />
+		<Essentials />
+		<Features />
+		<Contact />
 	</body>
 </html>
