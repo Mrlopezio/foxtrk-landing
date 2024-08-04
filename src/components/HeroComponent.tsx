@@ -8,7 +8,7 @@ const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
   return (
     <div className={styles.hero + " " + className}>
       <div className={styles["hero-title"]}>
-        <h1>Simplify your work tracking and income management </h1>
+        <h1>Simplify your work tracking and income management</h1>
         <p>
           Welcome to FoxTRK the spp designed to empower gig economy riders to
           easily track their work and manage their income. Say goodbye to
@@ -16,17 +16,17 @@ const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
           together in one place.
         </p>
       </div>
-      <div className={styles.heroSubscription}>
+      <div className={styles["hero-subscription"]}>
         <form action="">
           <input type="text" />
           <button>Sign Up</button>
         </form>
+        <p>
+          By clicking Sign up, you're confirming that you agree with our Terms
+          and Conditions.
+        </p>
       </div>
-      <p>
-        By clicking Sign up, you're confirming that you agree with our Terms and
-        Conditions.
-      </p>
-      <div className={styles.heroImage}></div>
+      <div className={styles["hero-image"]}>This is the hero image</div>
     </div>
   );
 };
