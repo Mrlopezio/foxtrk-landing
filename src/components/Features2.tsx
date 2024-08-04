@@ -1,4 +1,4 @@
-import styles from "./styles/Features.module.css";
+import styles from "./styles/Features.module.scss";
 
 export interface IFeaturesProps {
   className?: string;
@@ -11,7 +11,11 @@ const Features = ({
   return (
     <div className={styles.features + " " + className}>
       <div className={styles.featureItem}>
-        <div className={styles.rectangle9}></div>
+                    
+                    
+                    
+                    
+                    <div className={styles.rectangle9}></div>
         <div className={styles.frame2}>
           <div
             className={

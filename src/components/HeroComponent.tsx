@@ -1,4 +1,4 @@
-import styles from "./styles/Hero.module.css";
+import styles from "./styles/Hero.module.scss";
 
 export interface IHeroProps {
   className?: string;
@@ -7,36 +7,26 @@ export interface IHeroProps {
 const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
   return (
     <div className={styles.hero + " " + className}>
-      <div className={styles.heroTitle}>
-        <div className={styles.simplifyYourWorkTrackingAndIncomeManagement}>
-          Simplify your work tracking and income management{" "}
-        </div>
-        <div
-          className={
-            styles.welcomeToFoxTrkTheSppDesignedToEmpowerGigEconomyRidersToEasilyTrackTheirWorkAndManageTheirIncomeSayGoodbyeToEndlessSpreadsheetsAndJugglingMultipleAppsFoxTrkBringsItAllTogetherInOnePlace
-          }
-        >
+      <div className={styles["hero-title"]}>
+        <h1>Simplify your work tracking and income management </h1>
+        <p>
           Welcome to FoxTRK the spp designed to empower gig economy riders to
           easily track their work and manage their income. Say goodbye to
           endless spreadsheets and juggling multiple apps - FoxTRK brings it all
-          together in one place.{" "}
-        </div>
+          together in one place.
+        </p>
       </div>
       <div className={styles.heroSubscription}>
-        <div className={styles.rectangle7}></div>
-        <div className={styles.frame1}>
-          <div className={styles.signUp}>Sign up </div>
-        </div>
+        <form action="">
+          <input type="text" />
+          <button>Sign Up</button>
+        </form>
       </div>
-      <div
-        className={
-          styles.byClickingSignUpYouReConfirmingThatYouAgreeWithOurTermsAndConditions
-        }
-      >
+      <p>
         By clicking Sign up, you're confirming that you agree with our Terms and
-        Conditions.{" "}
-      </div>
-      <div className={styles.rectangle8}></div>
+        Conditions.
+      </p>
+      <div className={styles.heroImage}></div>
     </div>
   );
 };

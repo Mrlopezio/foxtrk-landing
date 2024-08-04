@@ -1,4 +1,4 @@
-import styles from "./styles/Features.module.css";
+import styles from "./styles/Features.module.scss";
 // import intuitiveDashboard from '/media/intuitive-dashboard.svg'
 export interface IFeaturesProps {
   className?: string;
