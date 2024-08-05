@@ -1,134 +1,60 @@
 @import "./variables.scss";
 
-.hero,
-.hero * {
-  box-sizing: border-box;
-}
-
 .hero {
-  background: #ffffff;
-  padding: 60px 12px 12px 12px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 5rem 0.5rem 10rem 0.5rem;
+  width: 100%;
 
-.heroTitle {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
+  &-image {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 
-// .simplifyYourWorkTrackingAndIncomeManagement {
-//   color: #000000;
-//   text-align: center;
-//   font-family: var(
-//     --landing-h1-m-font-family,
-//     "NotoSans-DisplayBold",
-//     sans-serif
-//   );
-//   font-size: var(--landing-h1-m-font-size, 40px);
-//   line-height: var(--landing-h1-m-line-height, 110%);
-//   font-weight: var(--landing-h1-m-font-weight, 400);
-//   position: relative;
-//   align-self: stretch;
-// }
+    &-bg {
+      border-radius: 0.5rem;
+      display: block;
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+      object-position: 60% 0;
+    }
+    @media screen and (min-width: 600px) {
+      max-width: 900px;
+    }
 
-.welcomeToFoxTrkTheSppDesignedToEmpowerGigEconomyRidersToEasilyTrackTheirWorkAndManageTheirIncomeSayGoodbyeToEndlessSpreadsheetsAndJugglingMultipleAppsFoxTrkBringsItAllTogetherInOnePlace {
-  color: #000000;
-  text-align: center;
-  font-family: var(--landing-p-m-font-family, "NotoSans-Light", sans-serif);
-  font-size: var(--landing-p-m-font-size, 16px);
-  line-height: var(--landing-p-m-line-height, 110%);
-  font-weight: var(--landing-p-m-font-weight, 300);
-  position: relative;
-  align-self: stretch;
-}
-
-.heroSubscription {
-  background: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.rectangle7 {
-  background: #f9f9f9;
-  border-radius: 8px 8px 0px 0px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-width: 1px;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 39px;
-  position: relative;
-}
-
-.frame1 {
-  background: #00ac94;
-  padding: 12px 24px 12px 24px;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.signUp {
-  color: #ffffff;
-  text-align: center;
-  font-family: var(
-    --landing-button-m-font-family,
-    "NotoSans-Medium",
-    sans-serif
-  );
-  font-size: var(--landing-button-m-font-size, 14px);
-  line-height: var(--landing-button-m-line-height, 110%);
-  font-weight: var(--landing-button-m-font-weight, 500);
-  position: relative;
-}
-
-.byClickingSignUpYouReConfirmingThatYouAgreeWithOurTermsAndConditions {
-  color: #000000;
-  text-align: center;
-  font-family: var(--landing-cardp-m-font-family, "NotoSans-Light", sans-serif);
-  font-size: var(--landing-cardp-m-font-size, 14px);
-  line-height: var(--landing-cardp-m-line-height, 110%);
-  font-weight: var(--landing-cardp-m-font-weight, 300);
-  position: relative;
-  align-self: stretch;
-}
-
-.rectangle8 {
-  background: #d9d9d9;
-  border-radius: 8px;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 259px;
-  position: relative;
+    &-mockup {
+      &-1 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        @media screen and (min-width: 600px) {
+          left: 5rem;
+          scale: 1.1;
+        }
+      }
+      &-2 {
+        position: absolute;
+        bottom: 9rem;
+        left: 1rem;
+        @media screen and (min-width: 600px) {
+          scale: 1.2;
+          bottom: 40%;
+          left: -1rem;
+        }
+      }
+    }
+  }
+  h1,
+  p {
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }

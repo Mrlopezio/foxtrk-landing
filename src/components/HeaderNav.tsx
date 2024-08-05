@@ -5,8 +5,10 @@ type Props = {};
 const HeaderNav = (props: Props) => {
   return (
     <div className={styles.header}>
-      <img src="/favicon.svg" alt="" width="28px" height="28px" />
-      <h1>FoxTRK</h1>
+      <div className={styles["header-nav"]}>
+        <img src="/favicon.svg" alt="" width="36px" height="36px" />
+        <img src="/foxtrk-logo2.svg" alt="" width="auto" height="36px" />
+      </div>
     </div>
   );
 };

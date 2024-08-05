@@ -1,215 +1,74 @@
 @import "./variables.scss";
 
 .features,
-.features * {
-  box-sizing: border-box;
-}
-
-.features {
-  background: #ffffff;
-  padding: 12px;
+.features2 {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  @media screen and (min-width: 600px) {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  h2 {
+    margin: 0;
+  }
+  &-image {
+    width: 100%;
+    height: fit-content;
+    flex: 0.8;
+    position: relative;
+    img {
+      border-radius: 0.5rem;
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-widgets {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 180px !important;
+      object-fit: cover;
+      img {
+        backdrop-filter: blur(6px);
+      }
+      @media screen and (min-width: 600px) {
+        left: -2rem;
+      }
+    }
+  }
+  &-content {
+    flex: 1;
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0;
+    &-item {
+      flex: 1;
+      h3 {
+        margin: 0.5rem 0;
+      }
+    }
+  }
 }
 
-.featureItem {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-shrink: 0;
-  max-width: 1200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.rectangle9 {
-  background: #d9d9d9;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 234px;
-  position: relative;
-}
-
-.frame2 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.realTimeWorkTrackingForRidersWithAnAllInOneSolution {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-h2-m-font-family, "NotoSans-Bold", sans-serif);
-  font-size: var(--landing-h2-m-font-size, 32px);
-  line-height: var(--landing-h2-m-line-height, 110%);
-  font-weight: var(--landing-h2-m-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-}
-
-.ridersCanEasilyLogTheirShiftsDeliveriesAndMilesInOneConvenientAppNoMoreSpreadsheetsOrJugglingMultipleApps {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-p-m-font-family, "NotoSans-Light", sans-serif);
-  font-size: var(--landing-p-m-font-size, 16px);
-  line-height: var(--landing-p-m-line-height, 110%);
-  font-weight: var(--landing-p-m-font-weight, 300);
-  position: relative;
-  align-self: stretch;
-}
-
-.frame3 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.frame4 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-.lucideLayoutDashboard {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  overflow: visible;
-}
-
-.intuitiveDashboard {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-h3-m-font-family, "NotoSans-Bold", sans-serif);
-  font-size: var(--landing-h3-m-font-size, 20px);
-  line-height: var(--landing-h3-m-line-height, 110%);
-  font-weight: var(--landing-h3-m-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-}
-
-.textFeature1 {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-cardp-m-font-family, "NotoSans-Light", sans-serif);
-  font-size: var(--landing-cardp-m-font-size, 14px);
-  line-height: var(--landing-cardp-m-line-height, 110%);
-  font-weight: var(--landing-cardp-m-font-weight, 300);
-  position: relative;
-  align-self: stretch;
-}
-
-.frame5 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-.lucideSplit {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  overflow: visible;
-}
-
-.dataDrivenDecisions {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-h3-m-font-family, "NotoSans-Bold", sans-serif);
-  font-size: var(--landing-h3-m-font-size, 20px);
-  line-height: var(--landing-h3-m-line-height, 110%);
-  font-weight: var(--landing-h3-m-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-}
-
-.frame42 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.lucideGoal {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  overflow: visible;
-}
-
-.setGoals {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-h3-m-font-family, "NotoSans-Bold", sans-serif);
-  font-size: var(--landing-h3-m-font-size, 20px);
-  line-height: var(--landing-h3-m-line-height, 110%);
-  font-weight: var(--landing-h3-m-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-}
-
-.lucideRectangleEllipsis {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  overflow: visible;
-}
-
-.trackProgress {
-  color: #000000;
-  text-align: left;
-  font-family: var(--landing-h3-m-font-family, "NotoSans-Bold", sans-serif);
-  font-size: var(--landing-h3-m-font-size, 20px);
-  line-height: var(--landing-h3-m-line-height, 110%);
-  font-weight: var(--landing-h3-m-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-}
+// .features {
+//   &-image {
+//     img {
+//       height: 30vh;
+//       @media screen and (min-width: 600px) {
+//         height: 40vh;
+//       }
+//     }
+//   }
+// }

@@ -1,43 +1,59 @@
 @import "./variables.scss";
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: var(--landing-h1-font-family);
+  line-height: var(--landing-h1-line-height);
+  color: var(--landing-h1-color);
+}
 
 h1 {
-  font-family: var(--landing-h1-font-family);
-  font-size: var(--landing-h1-font-size);
-  line-height: var(--landing-h1-line-height);
-  font-weight: 700;
-  //   font-weight: var(--landing-h1-font-weight);
-  font-style: var(--landing-h1-font-style);
-  letter-spacing: var(--landing-h1-letter-spacing);
-  text-transform: var(--landing-h1-text-transform);
-  color: var(--landing-h1-color);
+  font-size: var(--landing-h1-m-font-size);
+  font-weight: var(--landing-h1-font-weight);
+
+  @media screen and (min-width: 600px) {
+    font-size: var(--landing-h1-font-size);
+  }
 }
 h2 {
   font-family: var(--landing-h2-font-family);
-  font-size: var(--landing-h2-font-size);
-  line-height: var(--landing-h2-line-height);
+  font-size: var(--landing-h2-m-font-size);
   font-weight: var(--landing-h2-font-weight);
-  font-style: var(--landing-h2-font-style);
-  letter-spacing: var(--landing-h2-letter-spacing);
-  text-transform: var(--landing-h2-text-transform);
-  color: var(--landing-h2-color);
+  @media screen and (min-width: 600px) {
+    font-size: var(--landing-h2-font-size);
+  }
 }
 h3 {
   font-family: var(--landing-h3-font-family);
-  font-size: var(--landing-h3-font-size);
-  line-height: var(--landing-h3-line-height);
+  font-size: var(--landing-h3-m-font-size);
   font-weight: var(--landing-h3-font-weight);
-  font-style: var(--landing-h3-font-style);
-  letter-spacing: var(--landing-h3-letter-spacing);
-  text-transform: var(--landing-h3-text-transform);
-  color: var(--landing-h3-color);
+  @media screen and (min-width: 600px) {
+    font-size: var(--landing-h3-font-size);
+  }
 }
 p {
   font-family: var(--landing-p-font-family);
-  font-size: var(--landing-p-font-size);
-  line-height: var(--landing-p-line-height);
+  font-size: var(--landing-p-m-font-size);
   font-weight: var(--landing-p-font-weight);
-  font-style: var(--landing-p-font-style);
-  letter-spacing: var(--landing-p-letter-spacing);
-  text-transform: var(--landing-p-text-transform);
-  color: var(--landing-p-color);
+  @media screen and (min-width: 600px) {
+    font-size: var(--landing-p-font-size);
+  }
+}
+small {
+  font-family: var(--landing-p-font-family);
+  font-size: var(--landing-cardp-m-font-size);
+  font-weight: var(--landing-p-font-weight);
+  @media screen and (min-width: 600px) {
+    font-size: var(--landing-cardp-font-size);
+  }
 }

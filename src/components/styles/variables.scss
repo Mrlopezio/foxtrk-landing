@@ -1,7 +1,7 @@
 /* Figma Styles of your File */
 :root {
   /* Colors */
-  --primary: transparent;
+  --primary: teal;
   --dark-blue: #314659;
   --dark-blue-boxes: #303c47;
 
@@ -9,7 +9,7 @@
   --landing-h1-font-family: NotoSans-Bold, sans-serif;
   --landing-h1-font-size: 64px;
   --landing-h1-line-height: 110%;
-  --landing-h1-font-weight: 700;
+  --landing-h1-font-weight: 900;
   --landing-h1-font-style: normal;
   --landing-h2-font-family: NotoSans-Bold, sans-serif;
   --landing-h2-font-size: 48px;
@@ -23,15 +23,15 @@
   --landing-h3-font-style: normal;
   --landing-p-font-family: NotoSans-Light, sans-serif;
   --landing-p-font-size: 20px;
-  --landing-p-line-height: 110%;
-  --landing-p-font-weight: 300;
+  --landin-p-font-weight: 300;
   --landing-p-font-style: normal;
   --landing-cardp-font-family: NotoSans-Light, sans-serif;
   --landing-cardp-font-size: 16px;
   --landing-cardp-line-height: 110%;
   --landing-cardp-font-weight: 300;
   --landing-cardp-font-style: normal;
-  --landing-h1-m-font-family: NotoSans-DisplayBold, sans-serif;
+  --landing-h1-m-font-fg-p-line-height: 110%;
+  --landingamily: NotoSans-DisplayBold, sans-serif;
   --landing-h1-m-font-size: 40px;
   --landing-h1-m-line-height: 110%;
   --landing-h1-m-font-weight: 400;

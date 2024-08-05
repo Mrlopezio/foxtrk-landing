@@ -1,3 +1,4 @@
+import SignUpComponent from "./SignUpComponent";
 import styles from "./styles/Hero.module.scss";
 
 export interface IHeroProps {
@@ -6,7 +7,7 @@ export interface IHeroProps {
 
 const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
   return (
-    <div className={styles.hero + " " + className}>
+    <div className={styles.hero}>
       <div className={styles["hero-title"]}>
         <h1>Simplify your work tracking and income management</h1>
         <p>
@@ -17,16 +18,25 @@ const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
         </p>
       </div>
       <div className={styles["hero-subscription"]}>
-        <form action="">
-          <input type="text" />
-          <button>Sign Up</button>
-        </form>
-        <p>
-          By clicking Sign up, you're confirming that you agree with our Terms
-          and Conditions.
-        </p>
+        <SignUpComponent />
       </div>
-      <div className={styles["hero-image"]}>This is the hero image</div>
+      <div className={styles["hero-image"]}>
+        <img
+          className={styles["hero-image-bg"]}
+          src="/media/uber-rider.jpg"
+          alt=""
+        />
+        <img
+          className={styles["hero-image-mockup-1"]}
+          src="/media/week-mobile-dashboard-mockup.svg"
+          alt=""
+        />
+        <img
+          className={styles["hero-image-mockup-2"]}
+          src="/media/tip-mobile-dashboard-mockup.svg"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
