@@ -7,7 +7,7 @@ export interface IHeroProps {
 
 const HeroComponent = ({ className, ...props }: IHeroProps): JSX.Element => {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} key="hero">
       <div className={styles["hero-title"]}>
         <h1>Simplify your work tracking and income management</h1>
         <p>

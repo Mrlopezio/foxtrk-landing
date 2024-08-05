@@ -7,7 +7,7 @@ export interface IContactProps {
 
 const Contact = ({ className, ...props }: IContactProps): JSX.Element => {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} key="contact">
       <h2>Join the FoxTRK waitlist today </h2>
       <p>
         Be the first to experience FoxTRK features and provide valuable

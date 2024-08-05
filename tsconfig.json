@@ -8,11 +8,16 @@
 
 {
   "compilerOptions": {
+    "baseUrl": ".", // Set your base URL
     "target": "ES2020",
     "module": "ESNext",
     "strict": true,
     "jsx": "preserve",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node", // Ensure this is set to "node"
+    "paths": {
+      "gsap": ["node_modules/gsap/dist/gsap.min.js"] // Add a path alias for GSAP
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules"]

@@ -6,7 +6,7 @@ export interface IFeaturesProps {
 
 const Essentials = ({ className, ...props }: IFeaturesProps): JSX.Element => {
   return (
-    <div className={styles.essentials}>
+    <div className={styles.essentials} key="essentials">
       <div className={styles["essentials-info"]}>
         <p className={styles["essentials-info-subtitle"]}>SIMPLIFY </p>
         <h2 className={styles.allYourEssentialRiderFeaturesInOnePlace}>

@@ -6,7 +6,7 @@ export interface IFeaturesProps {
 
 const Features = ({ className, ...props }: IFeaturesProps): JSX.Element => {
   return (
-    <div className={styles.features2}>
+    <div className={styles.features2} key="features2">
       <div className={styles["features-content"]}>
         <h2>
           Have an intelligent co-worker to plan your day ahead with forecasts

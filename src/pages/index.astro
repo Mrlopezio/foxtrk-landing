@@ -18,10 +18,44 @@ import "../components/styles/Home.module.scss";
   </head>
   <body>
     <HeaderNav />
-    <HeroComponent />
-    <Features />
-    <Essentials />
+    <div class="body-item">
+      <HeroComponent />
+    </div>
+    <div class="body-item">
+      <Features />
+    </div>
+    <div class="body-item">
+      <Essentials />
+    </div>
+    <div class="body-item">
     <Features2 />
-    <Contact />
+  </div>
+    <div class="body-item">
+      <Contact />
+    </div>
+
+    <script>
+      import gsap from "gsap";
+
+      // Your animation logic goes here!
+      const bodyContent = document?.getElementsByClassName("body-item");
+
+      console.log("body", bodyContent);
+      gsap.from(bodyContent, {
+        opacity: 0,
+        y: 50,
+      })
+      gsap.to(bodyContent,{
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        stagger:{
+          each: 5
+        }
+      });
+      
+  </script>
+  
+
   </body>
 </html>
