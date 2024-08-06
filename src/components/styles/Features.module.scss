@@ -21,6 +21,10 @@
     height: fit-content;
     flex: 0.8;
     position: relative;
+    &-container {
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
     img {
       border-radius: 0.5rem;
       display: block;
