@@ -19,24 +19,23 @@ import "../components/styles/Home.module.scss";
   <body>
     <HeaderNav />
     <div class="body-item">
-      <HeroComponent />
+      <HeroComponent client:only="react"/>
     </div>
     <div class="body-item">
-      <Features />
+      <Features client:only="react"/>
     </div>
     <div class="body-item">
-      <Essentials />
+      <Essentials client:only="react"/>
     </div>
     <div class="body-item">
-    <Features2 />
+    <Features2 client:only="react"/>
   </div>
     <div class="body-item">
-      <Contact />
+      <Contact client:only="react"/>
     </div>
 
     <script>
       import gsap from "gsap";
-
       // Your animation logic goes here!
       const bodyContent = document?.getElementsByClassName("body-item");
 
