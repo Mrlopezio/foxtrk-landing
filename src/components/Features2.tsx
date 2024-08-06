@@ -49,7 +49,7 @@ const Features = ({ className, ...props }: IFeaturesProps): JSX.Element => {
   }, [inView]);
 
   return (
-    <div className={styles.features2} key="features2" ref={ref}>
+    <div className={styles.features2} key="features2">
       <div className={styles["features-content"]} ref={contentRef}>
         <h2>
           Have an intelligent co-worker to plan your day ahead with forecasts
@@ -97,7 +97,7 @@ const Features = ({ className, ...props }: IFeaturesProps): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className={styles["features-image"]}>
+      <div className={styles["features-image"]} ref={ref}>
         <div className={styles["features-image-container"]} ref={imageRef}>
           <img src="/media/deliveroo-bag.jpg" alt="" />
         </div>
